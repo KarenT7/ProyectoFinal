@@ -11,8 +11,10 @@ public class Estudiantes {
 	private int cantidad;
 
 
-	public void añadir(Estudiante estudiantes)
-	{this.estudiantes.add(estudiantes);}
+	public void añadirEstudiante(Estudiante estudiante)
+	{this.estudiantes.add(estudiante);}
+	
+	
 	public void eliminarCategoria(int codEstudiante) throws EstudianteNoRegistrado {//llamar a produycto view
 		int indice = buscarEstudiante(codEstudiante);
 		estudiantes.remove(indice);}
@@ -33,4 +35,9 @@ public class Estudiantes {
 		{throw new EstudianteNoRegistrado();}
 		return indice;}
 
+	
+	public ArrayList<Estudiante> getEstudiante()
+	{
+		return estudiantes;
+	}
 }

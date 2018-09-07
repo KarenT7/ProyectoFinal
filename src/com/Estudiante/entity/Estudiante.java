@@ -2,7 +2,6 @@ package com.Estudiante.entity;
 
 public class Estudiante {
 	private int codigoEstudiante;
-	private int codigoMateria;
 	private int codigoCuenta;
 	private String Nombre;
 	private String Apellido;
@@ -14,14 +13,13 @@ public class Estudiante {
 	private int semestre;
 	private String Campus;
 	private String Carrera;
-	
-	
-	public Estudiante(int codigoEstudiante, int codigoMateria, int codigoCuenta, String nombre, String apellido, int cI,
+
+
+	public Estudiante(int codigoEstudiante, int codigoCuenta, String nombre, String apellido, int cI,
 			int fechaNacimiento, int telefono, String direccion, boolean pAA, int semestre, String campus,
 			String carrera) {
 		super();
 		this.codigoEstudiante = codigoEstudiante;
-		this.codigoMateria = codigoMateria;
 		this.codigoCuenta = codigoCuenta;
 		Nombre = nombre;
 		Apellido = apellido;
@@ -43,16 +41,6 @@ public class Estudiante {
 
 	public void setCodigoEstudiante(int codigoEstudiante) {
 		this.codigoEstudiante = codigoEstudiante;
-	}
-
-
-	public int getCodigoMateria() {
-		return codigoMateria;
-	}
-
-
-	public void setCodigoMateria(int codigoMateria) {
-		this.codigoMateria = codigoMateria;
 	}
 
 
@@ -167,13 +155,17 @@ public class Estudiante {
 
 	@Override
 	public String toString() {
-		return "Estudiante [codigoEstudiante=" + codigoEstudiante + ", codigoMateria=" + codigoMateria
-				+ ", codigoCuenta=" + codigoCuenta + ", Nombre=" + Nombre + ", Apellido=" + Apellido + ", CI=" + CI
-				+ ", fechaNacimiento=" + fechaNacimiento + ", telefono=" + telefono + ", Direccion=" + Direccion
-				+ ", PAA=" + PAA + ", semestre=" + semestre + ", Campus=" + Campus + ", Carrera=" + Carrera + "]";
+		return "Estudiante [codigoEstudiante=" + codigoEstudiante + ", codigoCuenta=" + codigoCuenta + ", Nombre="
+				+ Nombre + ", Apellido=" + Apellido + ", CI=" + CI + ", fechaNacimiento=" + fechaNacimiento
+				+ ", telefono=" + telefono + ", Direccion=" + Direccion + ", PAA=" + PAA + ", semestre=" + semestre
+				+ ", Campus=" + Campus + ", Carrera=" + Carrera + "]";
 	}
-	
-	
+
+
+
+
+
+
 
 
 

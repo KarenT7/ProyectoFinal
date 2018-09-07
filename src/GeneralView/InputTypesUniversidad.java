@@ -65,4 +65,26 @@ public class InputTypesUniversidad {
 		return valor;
 	}
 
+	public static boolean readBoolean(String mensaje, Scanner scanner) {
+
+		boolean valor=false;
+		while(true)
+		{
+			try
+
+			{
+				System.out.print(mensaje);
+				valor=scanner.nextBoolean();
+				scanner.nextLine();
+
+				break;
+			}
+			catch(java.util.InputMismatchException e)
+			{System.out.println("Debe ingresar true(si la dio) o false(no la dio) segun haya realizado la prueba");
+			scanner.nextLine();}
+		}
+
+		return valor;
+	}
+	
 }
